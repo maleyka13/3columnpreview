@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 850px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 25px;
+}
+.card h2 {
+  color: white;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 28px;
+}
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.btn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+}
+.sedan .btn {
+  color: hsl(31, 77%, 52%);
+}
+.suvs .btn {
+  color: hsl(184, 100%, 22%);
+}
+.luxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 725px) {
+  .container {
+    flex-direction: column;
+  }
+}
